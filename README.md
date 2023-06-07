@@ -1,2 +1,2 @@
 # AI_proeject
-Algorithm: Kmeans,...
+Algorithm: Kmeans and KNN
