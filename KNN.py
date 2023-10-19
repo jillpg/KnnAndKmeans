@@ -18,9 +18,7 @@ class KNN:
 
         self._init_train(train_data)
         self.labels = np.array(labels)
-        #############################################################
-        ##  THIS FUNCTION CAN BE MODIFIED FROM THIS POINT, if needed
-        #############################################################
+     
 
 
     def _init_train(self,train_data):
@@ -29,10 +27,6 @@ class KNN:
         :param train_data: PxMxNx3 matrix corresponding to P color images
         :return: assigns the train set to the matrix self.train_data shaped as PxD (P points in a D dimensional space)
         """
-        #######################################################
-        ##  YOU MUST REMOVE THE REST OF THE CODE OF THIS FUNCTION
-        ##  AND CHANGE FOR YOUR OWN CODE
-        #######################################################
 
         self.train_data = np.array(train_data.reshape((train_data.shape[0],14400)),dtype=float)
 
@@ -45,10 +39,7 @@ class KNN:
         :return: the matrix self.neighbors is created (NxK)
                  the ij-th entry is the j-th nearest train point to the i-th test point
         """
-        #######################################################
-        ##  YOU MUST REMOVE THE REST OF THE CODE OF THIS FUNCTION
-        ##  AND CHANGE FOR YOUR OWN CODE
-        #######################################################
+
         self.neighbors = self.labels[np.argsort(scipy.spatial.distance.cdist(np.array(test_data.reshape((test_data.shape[0],14400)),dtype=float),self.train_data,metric='euclidean'),axis=1)[:,:k]]
 
     def get_class(self):
@@ -59,10 +50,6 @@ class KNN:
                             (i.e. the class at which that row belongs)
                 2nd array For each of the rows in self.neighbors gets the % of votes for the winning class
         """
-        #######################################################
-        ##  YOU MUST REMOVE THE REST OF THE CODE OF THIS FUNCTION
-        ##  AND CHANGE FOR YOUR OWN CODE
-        #######################################################
 
         clase=np.empty(10,dtype=object)
         porcentaje=np.empty(10,dtype=float)
@@ -75,7 +62,7 @@ class KNN:
             porcentaje[row]=contador[clase[row]]/sorted[row].shape[0]
 
         return clase #,porcentaje  #quitar el si es necesario
-        # lo he puesto asi porque me daba error en test_get_class de KNN
+
 
     def predict(self, test_data, k):
         """
