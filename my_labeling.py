@@ -23,8 +23,6 @@ if __name__ == '__main__':
     classes = list(set(list(train_class_labels) + list(test_class_labels)))
 
 
-## You can start coding your functions here
-
 
 
 def Retrieval_by_color(list_imagenes,etiquetes_Kmeans,pregunta ,porcentajes=None):
