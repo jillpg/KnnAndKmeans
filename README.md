@@ -1,5 +1,5 @@
 # Descripción 🌴
-Pequeño proyecto donde utilizo **Python** y los algoritmos KNN y Kmeans para etiquetar automáticamente diferentes prendas de ropa y sus respectivos colores.
+Pequeño proyecto donde utilizo **Python** y los algoritmos **KNN** y **KMeans** para etiquetar automáticamente diferentes prendas de ropa y sus respectivos colores.
 
 # Autor 😎
 Jill Palma Garro
