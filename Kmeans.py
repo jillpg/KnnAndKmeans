@@ -1,5 +1,3 @@
-__authors__ = ['1604284','1598906']
-__group__ = 'GrupDL.17'
 
 import collections
 
