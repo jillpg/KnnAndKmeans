@@ -4,7 +4,7 @@ Pequeño proyecto donde utilizo los algoritmos KNN y Kmeans para etiquetar autom
 # Autor 😎
 Jill Palma Garro
 
-[LinkedIn](www.linkedin.com/in/jill-pg) 
+[LinkedIn](www.linkedin.com/in/jillpg) 
 
 [Github](https://github.com/JPG24)
 
